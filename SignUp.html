@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Smart Login System</title>
+</head>
+<body>
+    <div class="header finisher-header vh-100 d-flex justify-content-center align-items-center">
+        <div class="container border-danger">
+            <div  class="form py-5 px-3 px-md-5 rounded-3 shadow-lg">
+                <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="textHeader my-3 d-flex justify-content-center align-items-center">
+                    <h1 class="text-white">Smart Login System</h1>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control bg-transparent" id="usernameInput" placeholder="Enter your name">
+                    <label for="usernameInput">Enter your name</label>
+                </div>
+                <div class="alert alert-danger p-2 mt-2 d-none">
+                    UserName must be starts with a capital letter and (0-9 , a-z , _) from {5 : 20}
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control bg-transparent" id="emailInput" placeholder="Enter your email">
+                    <label for="emailInput">Enter your email</label>
+                </div>
+                <div class="alert alert-danger p-2 mt-2 d-none">
+                    email must strts with characters (A-Z , a-z , 0-9) and contains @ and (gmail or yahoo) and ends with (.com or .net or .org)
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control bg-transparent" id="passwordInput" placeholder="Enter your password">
+                    <label for="passwordInput">Enter your password</label>
+                </div>
+                <div class="alert alert-danger p-2 mt-2 d-none">
+                    password must contains a capital letter and (0-9 or A-Z or a-z) at least 8
+                </div>
+                <div class="d-flex justify-content-center form-cont align-items-center">
+                    <button type="submit" class="btn w-100 btn-outline-danger px-4">Login</button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <p class="text-white h6">Don’t have an account? <a href="signup.html">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
+    <script src="js/SigUp.js"></script>
+</body>
+</html>
